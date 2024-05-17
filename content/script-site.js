@@ -30,11 +30,11 @@ function toggleTheme()
     body.classList.toggle("light-mode");
     if (body.classList.contains("dark-mode"))
     {
-        themeButton.innerHTML = "🌞" //"<i class=\"fa fa-sun-o\"></i>";
+        themeButton.innerHTML = "<img src=\"../content/images/light.png\">"; //"🌞" //"<i class=\"fa fa-sun-o\"></i>";
     }
     else
     {
-        themeButton.innerHTML = "🌙"; //"<i class=\"fa fa-moon-o\"></i>";
+        themeButton.innerHTML = "<img src=\"../content/images/dark.png\">"; //"🌙"; //"<i class=\"fa fa-moon-o\"></i>";
     }
 }
 
