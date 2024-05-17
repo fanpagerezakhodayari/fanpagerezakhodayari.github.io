@@ -308,3 +308,15 @@ function findNewsItemById(id)
         return newsItem.id === id;
     }) || null;
 }
+
+function openVideo(videoSrc)
+  {
+    document.getElementById('videoPlayer').src = '..\\content\\video\\' + videoSrc;
+    document.getElementById('popup').style.display = 'flex';
+  }
+
+  function closePopup()
+  {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('videoPlayer').src = '';
+  }
