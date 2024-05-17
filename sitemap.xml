@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+        <language>fa,en,tr</language>
+        <description>رضا خدایاری گوینده و دوبلور, Reza Khodayari Voiceover and Dubbing, Reza Khodayari Seslendirme ve Dublaj</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#home:fa</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <language>fa</language>
+        <description>رضا خدایاری گوینده و دوبلور</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#home:en</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <language>en</language>
+        <description>Reza Khodayari Voiceover and Dubbing</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#home:tr</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <language>tr</language>
+        <description>Reza Khodayari Seslendirme ve Dublaj</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#news:fa</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.9</priority>
+        <language>fa</language>
+        <description>آخرین اخبار و به‌روزرسانی‌ها درباره رضا خدایاری</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#news:en</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.9</priority>
+        <language>en</language>
+        <description>Latest news and updates about Reza Khodayari</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#news:tr</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.9</priority>
+        <language>tr</language>
+        <description>Reza Khodayari hakkında en son haberler ve güncellemeler</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#portfolio:fa</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.7</priority>
+        <language>fa</language>
+        <description>نمونه کارها، آثار صدا، گویندگی و دوبلوری رضا خدایاری</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#portfolio:en</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.7</priority>
+        <language>en</language>
+        <description>Portfolio, voice works, voice-over and dubbing samples by Reza Khodayari</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/#portfolio:tr</loc>
+        <lastmod>2024-05-16T10:23:44+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.7</priority>
+        <language>tr</language>
+        <description>Reza Khodayari'nin portfolyosu, ses çalışmaları, seslendirme ve dublaj örnekleri</description>
+    </url>
+</urlset>

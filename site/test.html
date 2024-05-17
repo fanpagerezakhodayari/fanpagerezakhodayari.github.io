@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آلبوم ویدیو</title>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* تراز کردن المان‌ها در مرکز */
+    align-items: flex-start; /* تراز کردن المان‌ها از بالا */
+    padding: 30vh 1vw 10vh; /* فاصله از بالا، راست و چپ، و پایین */
+  }
+  
+  .thumbnail {
+    background: #000; /* بک گراند مشکی */
+    margin: 10px;
+    width: 324px; /* عرض تصویر */
+    height: 185px; /* ارتفاع تصویر */
+    cursor: pointer;
+    display: inline-block; /* نمایش به صورت خطی و بدون شکستن خط */
+    margin-bottom: 60px; /* فضای بیشتر در پایین برای عنوان */
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down; /* جلوگیری از تغییر مقیاس نادرست تصاویر */
+  }
+  
+  .caption {
+    text-align: center;
+    padding: 10px 0; /* فضای بالا و پایین برای متن */
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 5%; /* فاصله از بالا 5 درصد */
+    left: 5%; /* فاصله از چپ 5 درصد */
+    right: 5%; /* فاصله از راست 5 درصد */
+    bottom: 5%; /* فاصله از پایین 5 درصد */
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    position: relative;
+    width: 90%; /* عرض نسبت به پنجره پاپ آپ */
+    height: 90%; /* ارتفاع نسبت به پنجره پاپ آپ */
+    padding: 20px;
+    background: #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px; /* فاصله بیشتر از بالا */
+    right: 20px; /* فاصله بیشتر از راست */
+    font-size: 30px; /* اندازه بزرگتر */
+    font-weight: bold; /* پررنگ تر */
+    color: #f00; /* رنگ قرمز */
+    cursor: pointer;
+  }
+  
+  video {
+    max-width: 100%; /* حداکثر عرض کامل درون پاپ آپ */
+    max-height: 80%; /* حداکثر ارتفاع 80% از پاپ آپ */
+    object-fit: scale-down; /* جلوگیری از تغییر مقیاس نادرست */
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <div class="thumbnail" onclick="openVideo('بعد از رفتنت.mp4')">
+    <img src="..\content\video\بعد از رفتنت.png" alt="بعد از رفتنت,After you leave,Sen gittikten sonra">
+    <div class="caption">
+      <p>
+        <span>بعد از رفتنت</span>
+        <!-- <span>After you leave</span>
+        <span>Sen gittikten sonra</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('بی تو.mp4')">
+    <img src="..\content\video\بی تو.png" alt="بی تو,Without you,Sensiz">
+    <div class="caption">
+      <p>
+        <span>بی تو</span>
+        <!-- <span>Without you</span>
+        <span>Sensiz</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('دایی جان.mp4')">
+    <img src="..\content\video\دایی جان.png" alt="دایی جان,Dear Uncle,Sevgili amca">
+    <div class="caption">
+      <p>
+        <span>دایی جان</span>
+        <!-- <span>Dear Uncle</span>
+        <span>Sevgili amca</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('دوستت خواهم داشت.mp4')">
+    <img src="..\content\video\دوستت خواهم داشت.png" alt="دوستت خواهم داشت,I will love you,Seni seveceğim">
+    <div class="caption">
+      <p>
+        <span>دوستت خواهم داشت</span>
+        <!-- <span>I will love you</span>
+        <span>Seni seveceğim</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('دیگر نمیتوانم.mp4')">
+    <img src="..\content\video\دیگر نمیتوانم.png" alt="دیگر نمیتوانم,I can not go on,Devam edemem">
+    <div class="caption">
+      <p>
+        <span>دیگر نمیتوانم</span>
+        <!-- <span>I can not go on</span>
+        <span>Devam edemem</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('دیوانگی.mp4')">
+    <img src="..\content\video\دیوانگی.png" alt="دیوانگی,Madness,Delilik">
+    <div class="caption">
+      <p>
+        <span>دیوانگی</span>
+        <!-- <span>Madness</span>
+        <span>Delilik</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('سکوت.mp4')">
+    <img src="..\content\video\سکوت.png" alt="سکوت,Silence,Sessizlik">
+    <div class="caption">
+      <p>
+        <span>سکوت</span>
+        <!-- <span>Silence</span>
+        <span>Sessizlik</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('فریاد بی صدای مادر.mp4')">
+    <img src="..\content\video\فریاد بی صدای مادر.png" alt="فریاد بی صدای مادر,Mother's voiceless scream,Annenin sessiz çığlığı">
+    <div class="caption">
+      <p>
+        <span>فریاد بی صدای مادر</span>
+        <!-- <span>Mother's voiceless scream</span>
+        <span>Annenin sessiz çığlığı</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('فقر و ثروت.mp4')">
+    <img src="..\content\video\فقر و ثروت.png" alt="فقر و ثروت,Poverty and wealth,Yoksulluk ve zenginlik">
+    <div class="caption">
+      <p>
+        <span>فقر و ثروت</span>
+        <!-- <span>Poverty and wealth</span>
+        <span>Yoksulluk ve zenginlik</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('نفرین دریا.mp4')">
+    <img src="..\content\video\نفرین دریا.png" alt="نفرین دریا,Curse of the sea,Denizin laneti">
+    <div class="caption">
+      <p>
+        <span>نفرین دریا</span>
+        <!-- <span>Curse of the sea</span>
+        <span>Denizin laneti</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('یوسف.mp4')">
+    <img src="..\content\video\یوسف.png" alt="یوسف,Joseph,Yusuf">
+    <div class="caption">
+      <p>
+        <span>یوسف</span>
+        <!-- <span>Joseph</span>
+        <span>Yusuf</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('نامشخص1.mp4')">
+    <img src="..\content\video\نامشخص1.png" alt="بدون عنوان,Untitled,İsimsiz">
+    <div class="caption">
+      <p>
+        <span>بدون عنوان</span>
+        <!-- <span>Untitled</span>
+        <span>İsimsiz</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('نامشخص2.mp4')">
+    <img src="..\content\video\نامشخص2.png" alt="بدون عنوان,Untitled,İsimsiz">
+    <div class="caption">
+      <p>
+        <span>بدون عنوان</span>
+        <!-- <span>Untitled</span>
+        <span>İsimsiz</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('نامشخص3.mp4')">
+    <img src="..\content\video\نامشخص3.png" alt="بدون عنوان,Untitled,İsimsiz">
+    <div class="caption">
+      <p>
+        <span>بدون عنوان</span>
+        <!-- <span>Untitled</span>
+        <span>İsimsiz</span> -->
+      </p>
+    </div>
+  </div>
+  <div class="thumbnail" onclick="openVideo('نامشخص4.mp4')">
+    <img src="..\content\video\نامشخص4.png" alt="بدون عنوان,Untitled,İsimsiz">
+    <div class="caption">
+      <p>
+        <span>بدون عنوان</span>
+        <!-- <span>Untitled</span>
+        <span>İsimsiz</span> -->
+      </p>
+    </div>
+  </div>
+  <!-- اضافه کردن ویدیوهای دیگر به همین شکل -->
+</div>
+
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <video controls id="videoPlayer">
+      <!-- محتوای ویدیو اینجا قرار می‌گیرد -->
+    </video>
+  </div>
+</div>
+
+<script>
+  function openVideo(videoSrc)
+  {
+    document.getElementById('videoPlayer').src = '..\\content\\video\\' + videoSrc;
+    document.getElementById('popup').style.display = 'flex';
+  }
+
+  function closePopup()
+  {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('videoPlayer').src = '';
+  }
+</script>
+
+</body>
+</html>

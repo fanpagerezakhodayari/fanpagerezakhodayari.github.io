@@ -1,0 +1,192 @@
+@import url('style-font.css');
+
+body
+{
+    font-family: 'MyCustomFont', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.light-mode
+{
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode
+{
+    background-color: #333;
+    color: #fff;
+}
+
+.light-mode .separator
+{
+    color: white;
+}
+
+.dark-mode .separator
+{
+    color: white;
+}
+
+.container
+{
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+head, nav
+{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+header h1
+{
+    margin-top: 50px;
+}
+
+
+header, footer
+{
+    background: #333;
+    background-image: url("header.png");
+    background-repeat: repeat;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav
+{
+    background: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    nav a
+    {
+        color: white;
+        text-decoration: none;
+        padding: 0 15px;
+        color: white;
+    }
+
+        nav a:hover
+        {
+            text-decoration: underline;
+        }
+
+section
+{
+    margin-bottom: 20px;
+}
+
+.des
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.news-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #ccc;
+}
+
+.news-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.news-title
+{
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    order: 1;
+}
+
+.news-date
+{
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    order: 2;
+}
+
+.news-content
+{
+    font-size: 16px;
+    color: #444;
+}
+
+.news-item:last-child
+{
+    border-bottom: none;
+}
+  
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    font-size: 0.8em;
+    width: 100vw;
+}
+
+.icon-switch
+{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-items: center;
+}
+
+    .icon-switch button
+    {
+        background-color: #444;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        color: tomato;
+    }
+
+    .icon-switch img
+    {
+        padding: 02px;
+        background-color: #444;
+        cursor: pointer;
+    }
+
+footer a
+{
+    color: white;
+}
+
+@media (max-width: 600px)
+{
+    .profile-container
+    {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .profile-image
+    {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}

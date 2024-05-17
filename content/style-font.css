@@ -1,0 +1,9 @@
+@font-face
+{
+    font-family: 'MyCustomFont';
+    src: url('fonts/Gandom.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Gandom.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Gandom.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Gandom.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Gandom.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

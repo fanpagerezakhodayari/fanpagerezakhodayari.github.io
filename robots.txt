@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /content/
+Sitemap: https://fanpagerezakhodayari.github.io/sitemap.xml
