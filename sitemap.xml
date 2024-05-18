@@ -83,4 +83,53 @@
         <language>tr</language>
         <description>Reza Khodayari'nin portfolyosu, ses çalışmaları, seslendirme ve dublaj örnekleri</description>
     </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/news/id1fa.html</loc>
+        <lastmod>2024-05-18T11:44:00+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.6</priority>
+        <language>fa</language>
+        <description>خداحافظی رضا خدایاری، گوینده و دوبلور، از عرصه هنری</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/news/id1en.html</loc>
+        <lastmod>2024-05-18T11:44:00+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.6</priority>
+        <language>en</language>
+        <description>Farewell to Reza Khodayari, announcer and voice actor, from the artistic field</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/news/id1tr.html</loc>
+        <lastmod>2024-05-18T11:44:00+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.6</priority>
+        <language>tr</language>
+        <description>Sanat dünyasından spiker ve seslendirme sanatçısı Reza Khodayari'ye veda</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/news/id2fa.html</loc>
+        <lastmod>2024-05-18T11:44:00+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.6</priority>
+        <language>fa</language>
+        <description>رضا خدایاری پدیده شبکه های اجتماعی به سوگ مادر نشست</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/news/id2en.html</loc>
+        <lastmod>2024-05-18T11:44:00+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.6</priority>
+        <language>en</language>
+        <description>Reza Khodayari, the phenomenon of social networks, mourned her mother</description>
+    </url>
+    <url>
+        <loc>https://fanpagerezakhodayari.github.io/site/news/id2tr.html</loc>
+        <lastmod>2024-05-18T11:44:00+03:30</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.6</priority>
+        <language>tr</language>
+        <description>Sosyal ağların fenomeni Reza Khodayari annesinin yasını tuttu</description>
+    </url>
+
 </urlset>
