@@ -77,6 +77,40 @@ function toggleLanguage(language)
     const siteMapFa = document.getElementById("SiteMapFa");
     const siteMapEn = document.getElementById("SiteMapEn");
     const siteMapTr = document.getElementById("SiteMapTr");
+    const afterYouLeaveFa = document.getElementById("AfterYouLeaveFa");
+    const afterYouLeaveEn = document.getElementById("AfterYouLeaveEn");
+    const afterYouLeaveTr = document.getElementById("AfterYouLeaveTr");
+    const withoutYouFa = document.getElementById("WithoutYouFa");
+    const withoutYouEn = document.getElementById("WithoutYouEn");
+    const withoutYouTr = document.getElementById("WithoutYouTr");
+    const dearUncleFa = document.getElementById("DearUncleFa");
+    const dearUncleEn = document.getElementById("DearUncleEn");
+    const dearUncleTr = document.getElementById("DearUncleTr");
+    const iWillLoveYouFa = document.getElementById("IWillLoveYouFa");
+    const iWillLoveYouEn = document.getElementById("IWillLoveYouEn");
+    const iWillLoveYouTr = document.getElementById("IWillLoveYouTr");
+    const iCanNotGoOnFa = document.getElementById("ICanNotGoOnFa");
+    const iCanNotGoOnEn = document.getElementById("ICanNotGoOnEn");
+    const iCanNotGoOnTr = document.getElementById("ICanNotGoOnTr");
+    const madnessFa = document.getElementById("MadnessFa");
+    const madnessEn = document.getElementById("MadnessEn");
+    const madnessTr = document.getElementById("MadnessTr");
+    const silenceFa = document.getElementById("SilenceFa");
+    const silenceEn = document.getElementById("SilenceEn");
+    const silenceTr = document.getElementById("SilenceTr");
+    const motherSVoicelessScreamFa = document.getElementById("MotherSVoicelessScreamFa");
+    const motherSVoicelessScreamEn = document.getElementById("MotherSVoicelessScreamEn");
+    const motherSVoicelessScreamTr = document.getElementById("MotherSVoicelessScreamTr");
+    const povertyAndWealthFa = document.getElementById("PovertyAndWealthFa");
+    const povertyAndWealthEn = document.getElementById("PovertyAndWealthEn");
+    const povertyAndWealthTr = document.getElementById("PovertyAndWealthTr");
+    const curseOfTheSeaFa = document.getElementById("CurseOfTheSeaFa");
+    const curseOfTheSeaEn = document.getElementById("CurseOfTheSeaEn");
+    const curseOfTheSeaTr = document.getElementById("CurseOfTheSeaTr");
+    const yusufFa = document.getElementById("YusufFa");
+    const yusufEn = document.getElementById("YusufEn");
+    const yusufTr = document.getElementById("YusufTr");
+    const untitledportfolios = document.querySelectorAll('[id^="Untitled"]');
 
     var newsItems = [
         document.querySelectorAll('.NewsTitleFa'),
@@ -120,6 +154,39 @@ function toggleLanguage(language)
         siteMapFa.textContent = "نقشه سایت";
         siteMapEn.textContent = "";
         siteMapTr.textContent = "";
+        afterYouLeaveFa.textContent = "بعد از رفتنت";
+        afterYouLeaveEn.textContent = "";
+        afterYouLeaveTr.textContent = "";
+        withoutYouFa.textContent = "بی تو";
+        withoutYouEn.textContent = "";
+        withoutYouTr.textContent = "";
+        dearUncleFa.textContent = "دایی جان";
+        dearUncleEn.textContent = "";
+        dearUncleTr.textContent = "";
+        iWillLoveYouFa.textContent = "دوستت خواهم داشت";
+        iWillLoveYouEn.textContent = "";
+        iWillLoveYouTr.textContent = "";
+        iCanNotGoOnFa.textContent = "دیگر نمیتوانم";
+        iCanNotGoOnEn.textContent = "";
+        iCanNotGoOnTr.textContent = "";
+        madnessFa.textContent = "دیوانگی";
+        madnessEn.textContent = "";
+        madnessTr.textContent = "";
+        silenceFa.textContent = "سکوت";
+        silenceEn.textContent = "";
+        silenceTr.textContent = "";
+        motherSVoicelessScreamFa.textContent = "فریاد بی صدای مادر";
+        motherSVoicelessScreamFa.textContent = "";
+        motherSVoicelessScreamTr.textContent = "";
+        povertyAndWealthFa.textContent = "فقر و ثروت";
+        povertyAndWealthEn.textContent = "";
+        povertyAndWealthTr.textContent = "";
+        curseOfTheSeaFa.textContent = "نفرین دریا";
+        curseOfTheSeaEn.textContent = "";
+        curseOfTheSeaTr.textContent = "";
+        yusufFa.textContent = "یوسف";
+        yusufEn.textContent = "";
+        yusufTr.textContent = "";
     }
     else if (language == "en")
     {
@@ -154,6 +221,39 @@ function toggleLanguage(language)
         siteMapFa.textContent = "";
         siteMapEn.textContent = "Site Map";
         siteMapTr.textContent = "";
+        afterYouLeaveFa.textContent = "";
+        afterYouLeaveEn.textContent = "After you leave";
+        afterYouLeaveTr.textContent = "";
+        withoutYouFa.textContent = "";
+        withoutYouEn.textContent = "Without you";
+        withoutYouTr.textContent = "";
+        dearUncleFa.textContent = "";
+        dearUncleEn.textContent = "Dear Uncle";
+        dearUncleTr.textContent = "";
+        iWillLoveYouFa.textContent = "";
+        iWillLoveYouEn.textContent = "I will love you";
+        iWillLoveYouTr.textContent = "";
+        iCanNotGoOnFa.textContent = "";
+        iCanNotGoOnEn.textContent = "I can not go on";
+        iCanNotGoOnTr.textContent = "";
+        madnessFa.textContent = "";
+        madnessEn.textContent = "Madness";
+        madnessTr.textContent = "";
+        silenceFa.textContent = "";
+        silenceEn.textContent = "Silence";
+        silenceTr.textContent = "";
+        motherSVoicelessScreamFa.textContent = "";
+        motherSVoicelessScreamEn.textContent = "Mother's voiceless scream";
+        motherSVoicelessScreamTr.textContent = "";
+        povertyAndWealthFa.textContent = "";
+        povertyAndWealthEn.textContent = "Poverty and wealth";
+        povertyAndWealthTr.textContent = "";
+        curseOfTheSeaFa.textContent = "";
+        curseOfTheSeaEn.textContent = "Curse of the sea";
+        curseOfTheSeaTr.textContent = "";
+        yusufFa.textContent = "";
+        yusufEn.textContent = "Joseph";
+        yusufTr.textContent = "";
     }
     else if (language == "tr")
     {
@@ -188,6 +288,39 @@ function toggleLanguage(language)
         siteMapFa.textContent = "";
         siteMapEn.textContent = "";
         siteMapTr.textContent = "Site Haritası";
+        afterYouLeaveFa.textContent = "";
+        afterYouLeaveEn.textContent = "";
+        afterYouLeaveTr.textContent = "Sen gittikten sonra";
+        withoutYouFa.textContent = "";
+        withoutYouEn.textContent = "";
+        withoutYouTr.textContent = "Sensiz";
+        dearUncleFa.textContent = "";
+        dearUncleEn.textContent = "";
+        dearUncleTr.textContent = "Sevgili amca";
+        iWillLoveYouFa.textContent = "";
+        iWillLoveYouEn.textContent = "";
+        iWillLoveYouTr.textContent = "Seni seveceğim";
+        iCanNotGoOnFa.textContent = "";
+        iCanNotGoOnEn.textContent = "";
+        iCanNotGoOnTr.textContent = "Devam edemem";
+        madnessFa.textContent = "";
+        madnessEn.textContent = "";
+        madnessTr.textContent = "Delilik";
+        silenceFa.textContent = "";
+        silenceEn.textContent = "";
+        silenceTr.textContent = "Sessizlik";
+        motherSVoicelessScreamFa.textContent = "";
+        motherSVoicelessScreamEn.textContent = "";
+        motherSVoicelessScreamTr.textContent = "Annenin sessiz çığlığı";
+        povertyAndWealthFa.textContent = "";
+        povertyAndWealthEn.textContent = "";
+        povertyAndWealthTr.textContent = "Yoksulluk ve zenginlik";
+        curseOfTheSeaFa.textContent = "";
+        curseOfTheSeaEn.textContent = "";
+        curseOfTheSeaTr.textContent = "Denizin laneti";
+        yusufFa.textContent = "";
+        yusufEn.textContent = "";
+        yusufTr.textContent = "Yusuf";
     }
 
     newsItems.forEach(function(divs)
@@ -211,6 +344,29 @@ function toggleLanguage(language)
             }
         });
     });
+
+    untitledportfolios.forEach(untitledportfolio =>
+        {
+            if (untitledportfolio.id.toLocaleLowerCase().endsWith(language))
+            {
+                if (language == 'fa')
+                {
+                    untitledportfolio.textContent = "بدون عنوان";
+                }
+                else if (language == 'en')
+                {
+                    untitledportfolio.textContent = "Untitled";
+                }
+                else if (language == 'tr')
+                {
+                    untitledportfolio.textContent = "İsimsiz";
+                }
+            }
+            else
+            {
+                untitledportfolio.textContent = "";
+            }
+        });
 
     body.forEach(element =>
         {
