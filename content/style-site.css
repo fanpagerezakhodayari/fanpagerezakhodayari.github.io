@@ -54,7 +54,7 @@ header h1
 header, footer
 {
     background: #333;
-    background-image: url("images\header.png");
+    background-image: url("images\\header.png");
     background-repeat: repeat;
     color: white;
     text-align: center;
