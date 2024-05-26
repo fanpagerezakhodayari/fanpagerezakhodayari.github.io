@@ -1,6 +1,7 @@
 ﻿var _language = "fa";
 var _homeDesList =[];
 var newsList = [];
+var _singlePage = "";
 
 var now = new Date();
 var yearEn = now.getFullYear();
@@ -465,14 +466,20 @@ function findNewsItemById(id)
     }) || null;
 }
 
-function openVideo(videoSrc)
+function openVideo(videoSrc, singlePage)
   {
     document.getElementById('videoPlayer').src = '..\\content\\video\\' + videoSrc;
     document.getElementById('popup').style.display = 'flex';
+    _singlePage = 'portfolio\\' + singlePage + '.html';
   }
 
   function closePopup()
   {
     document.getElementById('popup').style.display = 'none';
     document.getElementById('videoPlayer').src = '';
+  }
+
+  function openPortfolio()
+  {
+    window.open(_singlePage, "_blank");
   }
